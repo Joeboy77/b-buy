@@ -9,6 +9,7 @@
 body{
   font-family: "Lato", sans-serif;
   font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
 }
 .bg-blue{
   background: blue;
@@ -238,7 +239,7 @@ nav .navPart1 .catWrapper .sidebarNav.open{
 nav .navPart1 .catWrapper .sidebarNav ul li{
   width: 100%;
   list-style: none;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button{
   color: #000;
@@ -249,6 +250,36 @@ nav .navPart1 .catWrapper .sidebarNav ul li button{
 }
 nav .navPart1 .catWrapper .sidebarNav ul li button:hover{
   background: transparent !important;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li button svg{
+  font-size: 12px;
+  opacity: 0.6;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li{
+  position: static;
+}
+
+nav .navPart1 .catWrapper .sidebarNav ul li .submenu{
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu{
+  opacity: 1;
+  visibility: inherit;
+  left: 100%;
+}
+nav .navPart1 .catWrapper .sidebarNav ul li:hover .submenu button{
+  border-radius: 0;
 }
 nav .navPart2 ul{
   margin-bottom: 0;
@@ -337,4 +368,75 @@ nav .navPart2 ul li:hover .submenu{
 }
 .homeBannerSection .slick-arrow.slick-prev{
   left: 25px !important;
+}
+.cursor{
+  cursor: pointer;
+  height: 450px !important;
+}
+.text-light{
+  color: #ccc !important;
+}
+.text-sml{
+  font-size: 14px;
+}
+.homeProducts{
+  padding: 25px 0;
+  width: 100%;
+}
+.homeProducts .banner{
+  width: 100%;
+  height: 450px !important;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.productRow .hd{
+  font-size: 25px;
+  font-weight: 600;
+}
+.viewAllBtn{
+  padding: 8px 25px !important;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  outline: none !important;
+  border-radius: 30px !important;
+  color: #000 !important;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+.viewAllBtn svg{
+  font-size: 20px;
+}
+.productItem{
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.productItem .info{
+  padding: 15px;
+
+}
+.productItem h4{
+  font-size: 16px;
+  font-weight: 600;
+}
+.productItem .info .oldPrice{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: line-through;
+}
+.productItem .info .netPrice{
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+.product_row .item{
+  border-right: 1px solid transparent;
+}
+.product_row .swiper-slide:last-child .productItem{
+  border:  1px solid rgba(0, 0, 0, 0.1);
+}
+.swiper{
+  padding-right: 1px !important;
 }
