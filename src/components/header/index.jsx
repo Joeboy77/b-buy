@@ -6,9 +6,13 @@ import { FaRegCircleUser } from "react-icons/fa6";
 import { IoBagOutline } from "react-icons/io5";
 import SearchBox from '../SearchBar';
 import Navigation from '../navigation';
+import { MyContext } from '../../App';
+import { useContext } from 'react';
 
 
 const Header = () => {
+
+    const context = useContext(MyContext)
     return(
         <>
         <div className="headerWrapper">
@@ -27,7 +31,10 @@ const Header = () => {
                         </div>
 
                         <div className='col-sm-10 d-flex align-items-center part2'>
-                            <CountryDropDown />
+                            {
+                                context.countryList.legth!==0 && <CountryDropDown />
+                            }
+                            
 
                             <SearchBox />
 

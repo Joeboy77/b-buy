@@ -26,7 +26,10 @@ body{
 ::-webkit-scrollbar-track{
   background: transparent !important;
 }
-
+.headerWrapper{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
 .headerWrapper .top-strip{
   padding: 8px 0;
 }
@@ -164,6 +167,12 @@ header .part3 .circle svg{
   justify-content: flex-start;
   outline: none;
   padding: 10px 20px !important;
+}
+.locationModal .countryList li button:hover{
+  background: #fafafa !important;
+}
+.locationModal .countryList li button:active{
+  background: #e2e2e2 !important;
 }
 .locationModal .close_{
   position: absolute;
