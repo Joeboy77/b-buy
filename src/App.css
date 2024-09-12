@@ -10,6 +10,7 @@ body{
 .bg-blue{
   background: blue;
 }
+
 .headerWrapper .top-strip{
   padding: 8px 0;
 }
@@ -30,9 +31,9 @@ body{
   width: 150px;
   height: 60px;
   min-width: 150px;
-  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
   border-radius: 7px;
-  padding: 10px 10px;
+  padding: 10px 15px;
   outline: none;
 }
 .headerWrapper .header .part2 .countryDrop{
@@ -59,19 +60,23 @@ header .headerSearch{
   width: 60%;
   height: 60px;
   background: #f3f4f7;
-  padding: 10px;
+  padding: 5px;
   position: relative;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 header .headerSearch input{
   background: transparent !important;
   outline: none !important;
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.7);
   width: 100%;
   height: 40px;
   border: 0 !important;
   padding: 0 20px !important;
+}
+header .headerSearch input::-webkit-input-placeholder{
+  color: rgba(0, 0, 0, 0.6);
 }
 header .headerSearch button{
   position: absolute;
@@ -86,4 +91,38 @@ header .headerSearch button{
 }
 header .headerSearch button svg{
   font-size: 25px;
+}
+header .part3 .circle{
+  align-items: center;
+  justify-content: center;
+  min-width: 50px !important;
+  height: 50px !important;
+  width: 50px !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  outline: none;
+}
+header .part3 .circle svg{
+  font-size: 25px;
+}
+.cartTab button{
+  background: #fff1ee !important;
+}
+.cartTab{
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+}
+.cartTab button svg{
+  color: #ea2b0f !important;
+}
+.cartTab .count {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ea2b0f;
+  border-radius: 50%;
+  color: #fff;
+  width: 20px;
+  height: 20px;
 }
