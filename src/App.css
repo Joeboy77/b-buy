@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-blue{
+  background: blue;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headerWrapper .top-strip{
+  padding: 8px 0;
 }
-
-.App-link {
-  color: #61dafb;
+.headerWrapper .top-strip{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerWrapper .header{
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+.logoWrapper img {
+  width: 60%;
+}
+.headerWrapper .header .part2 .countryDrop{
+  width: 150px;
+  height: 60px;
+  min-width: 150px;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 7px;
+  padding: 10px 10px;
+  outline: none;
+}
+.headerWrapper .header .part2 .countryDrop{
+  text-align: left;
+  justify-content: flex-start;
+}
+.headerWrapper .header .part2 .countryDrop .label{
+  font-size: 12px;
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop .name{
+  font-size: 14px;
+  text-transform: capitalize !important;
+  color: #233a95 !important;
+  font-weight: 700;
+  line-height: 16px;
+}
+.headerWrapper .header .part2 .countryDrop span.ml-auto svg{
+  opacity: 0.7;
+}
+header .headerSearch{
+  width: 60%;
+  height: 60px;
+  background: #f3f4f7;
+  padding: 10px;
+  position: relative;
+  border-radius: 10px;
+}
+header .headerSearch input{
+  background: transparent !important;
+  outline: none !important;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 40px;
+  border: 0 !important;
+  padding: 0 20px !important;
+}
+header .headerSearch button{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 100;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 50% !important;
+  outline: none;
+}
+header .headerSearch button svg{
+  font-size: 25px;
 }
