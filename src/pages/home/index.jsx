@@ -148,6 +148,16 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="newsLetterSection">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6"></div>
+
+                        <div className="col-md-6"></div>
+                    </div>
+                </div>
+            </section>
         </>
     )
 }
