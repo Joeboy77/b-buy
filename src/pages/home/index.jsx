@@ -1,5 +1,6 @@
 import HomeBanner from "../../components/homeBanner"
-import Product1 from '../../assets/images/product1.jpeg'
+import Product1 from '../../assets/images/sideBan.jpg'
+import Product2 from '../../assets/images/sideBan2.jpg'
 import { Button } from "@mui/material"
 import { IoArrowForward } from "react-icons/io5";
 import React from "react";
@@ -8,6 +9,9 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import {Navigation} from 'swiper/modules'
 import ProductItem from "../../components/productItem/ProductItem";
+import HomeCat from "../../components/homeCat";
+import Banner1 from '../../assets/images/nextBan1.jpg'
+import Banner2 from '../../assets/images/nextBan.jpg'
 
 
 
@@ -21,12 +25,18 @@ const Home = () => {
         <>
             <HomeBanner />
 
+            <HomeCat />
+
             <section className="homeProducts">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
                             <div className="banner">
-                                <img src={Product1} alt="product-image" className="cursor" />
+                                <img src={Product1} alt="product-image" className="cursor w-100" />
+                            </div>
+
+                            <div className="banner mt-4">
+                                <img src={Product2} alt="product-image" className="cursor w-100" />
                             </div>
                         </div>
                         <div className="col-md-9 productRow">
@@ -89,6 +99,7 @@ const Home = () => {
                             <Swiper
                             slidesPerView={4}
                             spaceBetween={10}
+                            navigation={true}
                             pagination={{
                             clickable: true,
                             }}

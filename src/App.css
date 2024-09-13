@@ -389,9 +389,10 @@ nav .navPart2 ul li:hover .submenu{
   border-radius: 7px;
   overflow: hidden;
 }
-.productRow .hd{
+.hd{
   font-size: 20px;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .viewAllBtn{
   padding: 8px 25px !important;
@@ -500,3 +501,30 @@ nav .navPart2 ul li:hover .submenu{
 .productItem .imgWrapper:hover img{
   transform: scale(1.1);
 }
+.homeCat {
+  padding: 35px 0;
+}
+.homeCat .swiper{
+  overflow-x: hidden !important;
+}
+.homeCat .swiper .item{
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.homeCat .swiper .item img{
+  width: 80%;
+}
+.homeCat .swiper-button-prev, 
+.swiper-button-next{
+  top: -30px !important;
+  width: 30px !important;
+  height: 30px !important;
+}
+.homeCat .swiper-button-prev{
+  right: 100px !important;
+  left: inherit !important;
+}
+
