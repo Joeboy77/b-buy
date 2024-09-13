@@ -31,13 +31,15 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3">
+                           <div className="sticky">
                             <div className="banner">
-                                <img src={Product1} alt="product-image" className="cursor w-100" />
-                            </div>
+                                    <img src={Product1} alt="product-image" className="cursor w-100" />
+                                </div>
 
-                            <div className="banner mt-4">
-                                <img src={Product2} alt="product-image" className="cursor w-100" />
-                            </div>
+                                <div className="banner mt-4">
+                                    <img src={Product2} alt="product-image" className="cursor w-100" />
+                                </div>
+                           </div>
                         </div>
                         <div className="col-md-9 productRow">
                             <div className="d-flex align-items-center">
@@ -131,6 +133,16 @@ const Home = () => {
                                 </SwiperSlide>
 
                                 </Swiper>
+                            </div>
+
+                            <div className="d-flex mt-4 mb-5 bannerSec">
+                                <div className="banner">
+                                    <img src={Banner1} alt="product-image"  />
+                                </div>
+
+                                <div className="banner">
+                                    <img src={Banner2} alt="product-image"  />
+                                </div>
                             </div>
                         </div>
                     </div>
